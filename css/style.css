@@ -144,11 +144,38 @@ background:#082E47;
 .profile-image:hover{transform:translateY(-8px)}
 
 section{padding:140px 0}
-#approach,#expertise,#contact{
+#approach,#expertise{
  background:var(--surface);
 }
    #highlights,#insights {
         background:var(--surface-alt);
+}
+#contact{
+    padding:100px 0;
+    background:#F8F9FA;
+}
+.contact-content{
+ max-width:700px;
+    margin:0 auto;
+    text-align:center;
+}
+.contact-content h2{
+    font-size:2.5rem;
+    font-weight:700;
+    color:var(--heading);
+    margin-bottom:25px;
+}
+.contact-content p{
+    max-width:600px;
+    margin:0 auto 40px;
+    font-size:1.15rem;
+    line-height:1.9;
+    color:var(--text);
+}
+.contact-content .btn{
+    padding:16px 42px;
+    font-size:1rem;
+    font-weight:600;
 }
 footer{
  padding:40px 0;
