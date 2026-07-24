@@ -1,24 +1,30 @@
 from pathlib import Path
 
 css = """/* Premium style.css - Version 1.0 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+@import <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 :root{
-    --primary:#1E293B;
-
-    --secondary:#64748B;
-
-    --accent:#0F766E;
-
-    --accent-light:#14B8A6;
-
-    --background:#FCFCFB;
-
+    /* Backgrounds */
+    --bg:#F5F5F2;
     --surface:#FFFFFF;
+    --surface-alt:#FAFAF8;
 
-    --border:#E8ECEF;
+    /* Text */
+    --heading:#111827;
+    --text:#4B5563;
+    --muted:#9CA3AF;
 
-    --shadow:0 20px 60px rgba(15,23,42,.08);
+    /* Brand */
+    --accent:#0B3C5D;
+    --accent-hover:#082E47;
+
+    /* Borders */
+    --border:#E7E5E4;
+
+    /* Effects */
+    --shadow:0 25px 60px rgba(17,24,39,.08);
+
+    --radius:22px;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -30,29 +36,27 @@ body{
  line-height:1.8;
 }
 
-h1,h2,h3,.navbar-brand{font-family:'Manrope',sans-serif;}
+h1,h2,h3,.navbar-brand{font-family:'DM Serif Display',serif;}
 h1{
-   font-size:4.2rem;
+     font-size:4.4rem;
 
-    font-weight:700;
+    line-height:1.05;
 
-    line-height:1.1;
+    font-weight:400;
 
-    letter-spacing:-2px;
+    letter-spacing:-1px;
 
-    max-width:760px;
+    color:var(--heading);
 
-    color:#111827;
+    max-width:780px;
 }
 h2{font-size:1.35rem;color:var(--secondary);margin-bottom:24px}
 p{font-size:1.08rem;color:#475569;max-width:620px}
 
 .navbar{
-  background:rgba(252,252,251,.92);
-
+    background:rgba(245,245,242,.92);
     backdrop-filter:blur(18px);
-
-    border-bottom:1px solid #ECECEC;
+    border-bottom:1px solid var(--border);
 }
 .navbar-brand{
  font-size:2rem;
@@ -103,13 +107,23 @@ p{font-size:1.08rem;color:#475569;max-width:620px}
  transition:.3s;
 }
 .btn-primary{
- background:var(--accent);
- border:none;
- box-shadow:0 12px 30px rgba(37,99,235,.25);
+     background:#0B3C5D;
+
+    border:none;
+
+    color:#fff;
+
+    padding:16px 38px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    box-shadow:0 15px 35px rgba(11,60,93,.15);
 }
 .btn-primary:hover{
- background:var(--accent-dark);
- transform:translateY(-4px);
+background:#082E47;
+    transform:translateY(-2px);
 }
 .btn-outline-primary{
  border:2px solid var(--accent);
@@ -130,8 +144,11 @@ p{font-size:1.08rem;color:#475569;max-width:620px}
 .profile-image:hover{transform:translateY(-8px)}
 
 section{padding:140px 0}
-#approach,#expertise,#highlights,#insights,#contact{
- border-top:1px solid var(--border);
+#approach,#expertise,#contact{
+ background:var(--surface);
+}
+   #highlights,#insights {
+        background:var(--surface-alt);
 }
 footer{
  padding:40px 0;
