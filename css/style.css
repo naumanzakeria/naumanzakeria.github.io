@@ -143,7 +143,15 @@ background:#082E47;
 }
 .profile-image:hover{transform:translateY(-8px)}
 
-section{padding:140px 0}
+section {
+    padding: 90px 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 70px 0;
+    }
+}
 #approach,#expertise{
  background:var(--surface);
 }
