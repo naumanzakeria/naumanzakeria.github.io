@@ -4,51 +4,81 @@ css = """/* Premium style.css - Version 1.0 */
 @import <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 :root{
-    /* Backgrounds */
-    --bg:#F5F5F2;
+
+    /* Brand Colors */
+    --primary:#1E3A5F;
+    --primary-dark:#152C49;
+    --accent:#C89B3C;
+    /* Neutral Colors */
+    --white:#FFFFFF;
+    --background:#F8FAFC;
     --surface:#FFFFFF;
-    --surface-alt:#FAFAF8;
-
-    /* Text */
-    --heading:#111827;
-    --text:#4B5563;
-    --muted:#9CA3AF;
-
-    /* Brand */
-    --accent:#0B3C5D;
-    --accent-hover:#082E47;
-
-    /* Borders */
-    --border:#E7E5E4;
-
-    /* Effects */
-    --shadow:0 25px 60px rgba(17,24,39,.08);
-
-    --radius:22px;
+    --text:#1E293B;
+    --text-light:#64748B;
+    --border:#E5E7EB;
+    /* Shadows */
+    --shadow-sm:0 5px 20px rgba(15,23,42,.05);
+    --shadow-md:0 15px 45px rgba(15,23,42,.08);
+    --shadow-lg:0 25px 70px rgba(15,23,42,.12);
+    /* Radius */
+    --radius:18px;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- font-family:'Inter',sans-serif;
- background:var(--background);
- color:var(--primary);
- line-height:1.8;
+     font-family:'Poppins',sans-serif;
+    color:var(--text);
+    background:var(--background);
+    line-height:1.8;
+    font-size:17px;
+    font-weight:400;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
 }
 
-h1,h2,h3,.navbar-brand{font-family:'DM Serif Display',serif;}
-h1{
-     font-size:4.4rem;
+h1,
+h2,
+h3,
+.navbar-brand{
+    font-family:'DM Serif Display', serif;
+    color:var(--heading);
+    font-weight:400;
+    letter-spacing:-0.8px;
+}
 
-    line-height:1.05;
+h1{
+
+    font-size:4rem;
+
+    line-height:1.12;
 
     font-weight:400;
 
-    letter-spacing:-1px;
+    max-width:720px;
 
-    color:var(--heading);
+    margin-bottom:30px;
 
-    max-width:780px;
+}
+
+h2{
+
+    font-size:2.8rem;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    font-size:1.45rem;
+
+    line-height:1.35;
+
+    margin-bottom:15px;
+
 }
 h2{font-size:1.35rem;color:var(--secondary);margin-bottom:24px}
 p{font-size:1.08rem;color:#475569;max-width:620px}
