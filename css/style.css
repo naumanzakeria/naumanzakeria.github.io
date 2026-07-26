@@ -87,6 +87,23 @@ h3{
     margin-bottom:15px;
 
 }
+.hero-title{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1.2rem;
+
+    font-weight:500;
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+    margin:20px 0 30px;
+
+    max-width:650px;
+
+}
 p{
     font-size:1.08rem;
     color:var(--text);
