@@ -60,11 +60,10 @@ h1{
 }
 
 h2{
-
     font-size:2.8rem;
-
+    font-weight:400;
+    color:var(--heading);
     line-height:1.2;
-
     margin-bottom:20px;
 
 }
@@ -87,12 +86,13 @@ p{font-size:1.08rem;color:#475569;max-width:620px}
     border-bottom:1px solid var(--border);
 }
 .navbar-brand{
- font-size:2rem;
- color:var(--primary)!important;
- font-weight:800;
+    font-size:2rem;
+    font-family:'DM Serif Display',serif;
+    color:var(--heading)!important;
+    font-weight:400;
 }
 .nav-link{
- color:var(--secondary)!important;
+ color:var(--text)!important;
  margin-left:22px;
  font-weight:600;
  position:relative;
