@@ -5,21 +5,31 @@ css = """/* Premium style.css - Version 1.0 */
 
 :root{
 
-    /* Brand Colors */
+    /* Primary Brand */
     --primary:#1E3A5F;
-    --primary-dark:#152C49;
-    --accent:#C89B3C;
-    /* Neutral Colors */
-    --white:#FFFFFF;
+    --primary-dark:#162C45;
+    --accent:#2F6B9A;
+    --accent-hover:#25587F;
+
+    /* Backgrounds */
     --background:#F8FAFC;
     --surface:#FFFFFF;
-    --text:#1E293B;
+    --surface-alt:#F1F5F9;
+
+    /* Typography */
+    --heading:#0F172A;
+    --text:#475569;
     --text-light:#64748B;
-    --border:#E5E7EB;
+
+    /* UI */
+    --white:#FFFFFF;
+    --border:#E2E8F0;
+
     /* Shadows */
-    --shadow-sm:0 5px 20px rgba(15,23,42,.05);
-    --shadow-md:0 15px 45px rgba(15,23,42,.08);
-    --shadow-lg:0 25px 70px rgba(15,23,42,.12);
+    --shadow-sm:0 6px 18px rgba(15,23,42,.05);
+    --shadow-md:0 12px 35px rgba(15,23,42,.08);
+    --shadow-lg:0 25px 60px rgba(15,23,42,.12);
+
     /* Radius */
     --radius:18px;
 }
