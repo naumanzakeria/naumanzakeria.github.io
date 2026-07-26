@@ -142,11 +142,9 @@ background:#082E47;
  transition:.35s;
 }
 .profile-image:hover{transform:translateY(-8px)}
-
 section {
     padding: 90px 0;
 }
-
 @media (max-width: 768px) {
     section {
         padding: 70px 0;
