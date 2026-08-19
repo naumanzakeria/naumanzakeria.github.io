@@ -29,4 +29,17 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     revealEls.forEach(function (el) { el.classList.add('in-view'); });
   }
+
+  // Floating pill nav — show after scrolling past the hero
+  var floatingNav = document.getElementById('floatingNav');
+  if (floatingNav) {
+    var showThreshold = 400;
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > showThreshold) {
+        floatingNav.classList.add('visible');
+      } else {
+        floatingNav.classList.remove('visible');
+      }
+    }, { passive: true });
+  }
 });
